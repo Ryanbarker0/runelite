@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018, Adam <Adam@sigterm.info>
+ * Copyright (c) 2019, Lucas <https://github.com/Lucwousin>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -22,17 +22,29 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.script;
+package net.runelite.api.vars;
 
-import static net.runelite.api.Opcodes.RUNELITE_EXECUTE;
-import net.runelite.cache.script.Instructions;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-public class RuneLiteInstructions extends Instructions
+@AllArgsConstructor
+@Getter
+public enum InterfaceTab
 {
-	@Override
-	public void init()
-	{
-		super.init();
-		add(RUNELITE_EXECUTE, "runelite_callback");
-	}
+	COMBAT(0),
+	STATS(1),
+	QUEST(2),
+	INVENTORY(3),
+	EQUIPMENT(4),
+	PRAYER(5),
+	SPELLBOOK(6),
+	CLAN(7),
+	ACCOUNT_MANAGMENT(8),
+	FRIENDS(9),
+	LOGOUT(10),
+	OPTIONS(11),
+	EMOTES(12),
+	MUSIC(13);
+
+	private final int id;
 }

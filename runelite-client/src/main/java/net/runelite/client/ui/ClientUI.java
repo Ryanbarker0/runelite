@@ -63,11 +63,7 @@ import javax.swing.JRootPane;
 import javax.swing.SwingUtilities;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import net.runelite.api.Client;
-import net.runelite.api.Constants;
-import net.runelite.api.GameState;
-import net.runelite.api.Player;
-import net.runelite.api.Point;
+import net.runelite.api.*;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.widgets.Widget;
 import net.runelite.api.widgets.WidgetInfo;
@@ -110,6 +106,7 @@ public class ClientUI
 	private static final String CONFIG_CLIENT_SIDEBAR_CLOSED = "clientSidebarClosed";
 	public static final BufferedImage ICON = ImageUtil.loadImageResource(ClientUI.class, "/runelite.png");
 
+
 	@Getter
 	private TrayIcon trayIcon;
 
@@ -128,7 +125,7 @@ public class ClientUI
 	private boolean withTitleBar;
 	private BufferedImage sidebarOpenIcon;
 	private BufferedImage sidebarClosedIcon;
-	private ContainableFrame frame;
+	public static ContainableFrame frame;
 	private JPanel navContainer;
 	private PluginPanel pluginPanel;
 	private ClientPluginToolbar pluginToolbar;
@@ -586,6 +583,8 @@ public class ClientUI
 				"RuneLite is outdated", INFORMATION_MESSAGE));
 		}
 	}
+
+	public static ContainableFrame getFrame() {return frame;}
 
 	private GraphicsConfiguration findDisplayFromBounds(final Rectangle bounds)
 	{
