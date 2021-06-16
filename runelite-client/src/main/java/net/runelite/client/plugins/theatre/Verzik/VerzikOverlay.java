@@ -84,22 +84,22 @@ public class VerzikOverlay extends RoomOverlay
 //			}
 
 			String tick_text = "";
-//			if (config.verzikAttackCounter() && verzik.getVerzikSpecial() != Verzik.SpecialAttack.WEBS)
-//			{
-//				tick_text += "[A] " + verzik.getVerzikAttackCount();
-//				if (config.verzikAutosTick() || config.verzikTotalTickCounter())
-//				{
-//					tick_text += " : ";
-//				}
-//			}
-//			if (config.verzikAutosTick() && verzik.getVerzikSpecial() != Verzik.SpecialAttack.WEBS)
-//			{
-//				tick_text += verzik.getVerzikTicksUntilAttack();
-//				if (config.verzikTotalTickCounter())
-//				{
-//					tick_text += " : ";
-//				}
-//			}
+			if (config.verzikAttackCounter() && verzik.getVerzikSpecial() != Verzik.SpecialAttack.WEBS)
+			{
+				tick_text += "[A] " + verzik.getVerzikAttackCount();
+				if (config.verzikAutosTick() || config.verzikTotalTickCounter())
+				{
+					tick_text += " : ";
+				}
+			}
+			if (config.verzikAutosTick() && verzik.getVerzikSpecial() != Verzik.SpecialAttack.WEBS)
+			{
+				tick_text += verzik.getVerzikTicksUntilAttack();
+				if (config.verzikTotalTickCounter())
+				{
+					tick_text += " : ";
+				}
+			}
 //			if (config.verzikTotalTickCounter())
 //			{
 //				tick_text += "(" + verzik.getVerzikTotalTicksUntilAttack() + ")";

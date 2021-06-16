@@ -178,253 +178,253 @@ public interface TheatreConfig extends Config
 		return true;
 	}
 
-//	@Alpha
-//	@ConfigItem(
-//			position = 1,
-//			keyName = "bloatIndicatorColorUP",
-//			name = "Bloat Indicator Color - UP",
-//			description = "Select a color for when Bloat is UP.",
-//			section = bloatSection
-//	)
-//	default Color bloatIndicatorColorUP()
-//	{
-//		return Color.CYAN;
-//	}
-//
-//	@Alpha
-//	@ConfigItem(
-//			position = 2,
-//			keyName = "bloatIndicatorColorTHRESH",
-//			name = "Bloat Indicator Color - THRESHOLD",
-//			description = "Select a color for when Bloat UP and goes over 37 ticks, which allows you to know when he can go down.",
-//			section = bloatSection
-//	)
-//	default Color bloatIndicatorColorTHRESH()
-//	{
-//		return Color.ORANGE;
-//	}
-//
-//	@Alpha
-//	@ConfigItem(
-//			position = 3,
-//			keyName = "bloatIndicatorColorDOWN",
-//			name = "Bloat Indicator Color - DOWN",
-//			description = "Select a color for when Bloat is DOWN.",
-//			section = bloatSection
-//	)
-//	default Color bloatIndicatorColorDOWN()
-//	{
-//		return Color.WHITE;
-//	}
-//
-//	@Alpha
-//	@ConfigItem(
-//			position = 4,
-//			keyName = "bloatIndicatorColorWARN",
-//			name = "Bloat Indicator Color - WARN",
-//			description = "Select a color for when Bloat is DOWN and about to get UP.",
-//			section = bloatSection
-//	)
-//	default Color bloatIndicatorColorWARN()
-//	{
-//		return Color.RED;
-//	}
-//
-//	@ConfigItem(
-//			position = 5,
-//			keyName = "bloatTickCounter",
-//			name = "Bloat Tick Counter",
-//			description = "Displays the tick counter for how long Bloat has been DOWN or UP.",
-//			section = bloatSection
-//	)
-//	default boolean bloatTickCounter()
-//	{
-//		return true;
-//	}
-//
-//	@ConfigItem(
-//			position = 6,
-//			keyName = "BloatTickCountStyle",
-//			name = "Bloat Tick Time Style",
-//			description = "Count up or Count down options on bloat downed state",
-//			section = bloatSection
-//	)
-//	default BLOATTIMEDOWN BloatTickCountStyle()
-//	{
-//		return BLOATTIMEDOWN.COUNTDOWN;
-//	}
-//
-//	@ConfigItem(
-//			position = 7,
-//			keyName = "bloatHands",
-//			name = "Bloat Hands Overlay",
-//			description = "Highlights the tiles where Bloat's hands will fall.",
-//			section = bloatSection
-//	)
-//	default boolean bloatHands()
-//	{
-//		return false;
-//	}
-//
-//	@Alpha
-//	@ConfigItem(
-//			position = 8,
-//			keyName = "bloatHandsColor",
-//			name = "Bloat Hands Overlay Color",
-//			description = "Select a color for the Bloat Hands Overlay to be.",
-//			section = bloatSection
-//	)
-//	default Color bloatHandsColor()
-//	{
-//		return Color.CYAN;
-//	}
-//
-//	@Range(max = 10)
-//	@ConfigItem(
-//			position = 9,
-//			keyName = "bloatHandsWidth",
-//			name = "Bloat Hands Overlay Thickness",
-//			description = "Sets the stroke width of the tile overlay where the hands fall. (BIGGER = THICKER).",
-//			section = bloatSection
-//	)
-//	default int bloatHandsWidth()
-//	{
-//		return 2;
-//	}
-//
-//	@ConfigItem(
-//			name = "Hide Bloat Tank",
-//			keyName = "hideBloatTank",
-//			description = "Hides the entire Bloat tank in the center of the room",
-//			position = 10,
-//			section = bloatSection
-//	)
-//	default boolean hideBloatTank()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			name = "Hide Ceiling Chains",
-//			keyName = "hideCeilingChains",
-//			description = "Hides the chains hanging from the ceiling in the Bloat room",
-//			position = 11,
-//			section = bloatSection
-//	)
-//	default boolean hideCeilingChains()
-//	{
-//		return false;
-//	}
+	@Alpha
+	@ConfigItem(
+			position = 1,
+			keyName = "bloatIndicatorColorUP",
+			name = "Bloat Indicator Color - UP",
+			description = "Select a color for when Bloat is UP.",
+			section = bloatSection
+	)
+	default Color bloatIndicatorColorUP()
+	{
+		return Color.CYAN;
+	}
 
-	//Nylocas Section
-//	@ConfigItem(
-//			position = 0,
-//			keyName = "nyloPillars",
-//			name = "Nylocas Pillar Health Overlay",
-//			description = "Displays the health percentage of the pillars.",
-//			section = nylocasSection
-//	)
-//	default boolean nyloPillars()
-//	{
-//		return true;
-//	}
+	@Alpha
+	@ConfigItem(
+			position = 2,
+			keyName = "bloatIndicatorColorTHRESH",
+			name = "Bloat Indicator Color - THRESHOLD",
+			description = "Select a color for when Bloat UP and goes over 37 ticks, which allows you to know when he can go down.",
+			section = bloatSection
+	)
+	default Color bloatIndicatorColorTHRESH()
+	{
+		return Color.ORANGE;
+	}
 
-//	@ConfigItem(
-//			position = 1,
-//			keyName = "nyloExplosions",
-//			name = "Nylocas Explosion Warning",
-//			description = "Highlights a Nylocas that is about to explode.",
-//			section = nylocasSection
-//	)
-//	default boolean nyloExplosions()
-//	{
-//		return true;
-//	}
+	@Alpha
+	@ConfigItem(
+			position = 3,
+			keyName = "bloatIndicatorColorDOWN",
+			name = "Bloat Indicator Color - DOWN",
+			description = "Select a color for when Bloat is DOWN.",
+			section = bloatSection
+	)
+	default Color bloatIndicatorColorDOWN()
+	{
+		return Color.WHITE;
+	}
 
-//	@Range(max = 52)
-//	@ConfigItem(
-//			position = 2,
-//			keyName = "nyloExplosionDisplayTicks",
-//			name = "Nylocas Display Last Ticks",
-//			description = "Displays the last 'x' amount of ticks for a Nylocas. (ex: to see the last 10 ticks, you set it to 10).",
-//			section = nylocasSection
-//	)
-//	default int nyloExplosionDisplayTicks()
-//	{
-//		return 46;
-//	}
+	@Alpha
+	@ConfigItem(
+			position = 4,
+			keyName = "bloatIndicatorColorWARN",
+			name = "Bloat Indicator Color - WARN",
+			description = "Select a color for when Bloat is DOWN and about to get UP.",
+			section = bloatSection
+	)
+	default Color bloatIndicatorColorWARN()
+	{
+		return Color.RED;
+	}
 
-//	@ConfigItem(
-//			position = 3,
-//			keyName = "nyloExplosionDisplayStyle",
-//			name = "Nylocas Display Explosion Style",
-//			description = "How to display when a nylocas is about to explode.",
-//			section = nylocasSection
-//	)
-//	default EXPLOSIVENYLORENDERSTYLE nyloExplosionOverlayStyle()
-//	{
-//		return EXPLOSIVENYLORENDERSTYLE.RECOLOR_TICK;
-//	}
-//
-//	@ConfigItem(
-//			position = 4,
-//			keyName = "nyloTimeAlive",
-//			name = "Nylocas Tick Time Alive",
-//			description = "Displays the tick counter of each nylocas spawn (Explodes on 52).",
-//			section = nylocasSection
-//	)
-//	default boolean nyloTimeAlive()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 5,
-//			keyName = "nyloTimeAliveCountStyle",
-//			name = "Nylocas Tick Time Alive Style",
-//			description = "Count up or Count down options on the tick time alive.",
-//			section = nylocasSection
-//	)
-//	default NYLOTIMEALIVE nyloTimeAliveCountStyle()
-//	{
-//		return NYLOTIMEALIVE.COUNTDOWN;
-//	}
-//
-//	@ConfigItem(
-//			position = 6,
-//			keyName = "nyloRecolorMenu",
-//			name = "Nylocas Recolor Menu Options",
-//			description = "Recolors the menu options of each Nylocas to it's respective attack style.",
-//			section = nylocasSection
-//	)
-//	default boolean nyloRecolorMenu()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 7,
-//			keyName = "nyloHighlightOverlay",
-//			name = "Nylocas Highlight Overlay",
-//			description = "Select your role to highlight respective Nylocas to attack.",
-//			section = nylocasSection
-//	)
-//	default boolean nyloHighlightOverlay()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 8,
-//			keyName = "nyloAliveCounter",
-//			name = "Nylocas Alive Counter Panel",
-//			description = "Displays how many Nylocas are currently alive.",
-//			section = nylocasSection
-//	)
-//	default boolean nyloAlivePanel()
-//	{
-//		return false;
-//	}
+	@ConfigItem(
+			position = 5,
+			keyName = "bloatTickCounter",
+			name = "Bloat Tick Counter",
+			description = "Displays the tick counter for how long Bloat has been DOWN or UP.",
+			section = bloatSection
+	)
+	default boolean bloatTickCounter()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 6,
+			keyName = "BloatTickCountStyle",
+			name = "Bloat Tick Time Style",
+			description = "Count up or Count down options on bloat downed state",
+			section = bloatSection
+	)
+	default BLOATTIMEDOWN BloatTickCountStyle()
+	{
+		return BLOATTIMEDOWN.COUNTDOWN;
+	}
+
+	@ConfigItem(
+			position = 7,
+			keyName = "bloatHands",
+			name = "Bloat Hands Overlay",
+			description = "Highlights the tiles where Bloat's hands will fall.",
+			section = bloatSection
+	)
+	default boolean bloatHands()
+	{
+		return false;
+	}
+
+	@Alpha
+	@ConfigItem(
+			position = 8,
+			keyName = "bloatHandsColor",
+			name = "Bloat Hands Overlay Color",
+			description = "Select a color for the Bloat Hands Overlay to be.",
+			section = bloatSection
+	)
+	default Color bloatHandsColor()
+	{
+		return Color.CYAN;
+	}
+
+	@Range(max = 10)
+	@ConfigItem(
+			position = 9,
+			keyName = "bloatHandsWidth",
+			name = "Bloat Hands Overlay Thickness",
+			description = "Sets the stroke width of the tile overlay where the hands fall. (BIGGER = THICKER).",
+			section = bloatSection
+	)
+	default int bloatHandsWidth()
+	{
+		return 2;
+	}
+
+	@ConfigItem(
+			name = "Hide Bloat Tank",
+			keyName = "hideBloatTank",
+			description = "Hides the entire Bloat tank in the center of the room",
+			position = 10,
+			section = bloatSection
+	)
+	default boolean hideBloatTank()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			name = "Hide Ceiling Chains",
+			keyName = "hideCeilingChains",
+			description = "Hides the chains hanging from the ceiling in the Bloat room",
+			position = 11,
+			section = bloatSection
+	)
+	default boolean hideCeilingChains()
+	{
+		return false;
+	}
+
+	// Nylocas Section
+	@ConfigItem(
+			position = 0,
+			keyName = "nyloPillars",
+			name = "Nylocas Pillar Health Overlay",
+			description = "Displays the health percentage of the pillars.",
+			section = nylocasSection
+	)
+	default boolean nyloPillars()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 1,
+			keyName = "nyloExplosions",
+			name = "Nylocas Explosion Warning",
+			description = "Highlights a Nylocas that is about to explode.",
+			section = nylocasSection
+	)
+	default boolean nyloExplosions()
+	{
+		return true;
+	}
+
+	@Range(max = 52)
+	@ConfigItem(
+			position = 2,
+			keyName = "nyloExplosionDisplayTicks",
+			name = "Nylocas Display Last Ticks",
+			description = "Displays the last 'x' amount of ticks for a Nylocas. (ex: to see the last 10 ticks, you set it to 10).",
+			section = nylocasSection
+	)
+	default int nyloExplosionDisplayTicks()
+	{
+		return 46;
+	}
+
+	@ConfigItem(
+			position = 3,
+			keyName = "nyloExplosionDisplayStyle",
+			name = "Nylocas Display Explosion Style",
+			description = "How to display when a nylocas is about to explode.",
+			section = nylocasSection
+	)
+	default EXPLOSIVENYLORENDERSTYLE nyloExplosionOverlayStyle()
+	{
+		return EXPLOSIVENYLORENDERSTYLE.RECOLOR_TICK;
+	}
+
+	@ConfigItem(
+			position = 4,
+			keyName = "nyloTimeAlive",
+			name = "Nylocas Tick Time Alive",
+			description = "Displays the tick counter of each nylocas spawn (Explodes on 52).",
+			section = nylocasSection
+	)
+	default boolean nyloTimeAlive()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 5,
+			keyName = "nyloTimeAliveCountStyle",
+			name = "Nylocas Tick Time Alive Style",
+			description = "Count up or Count down options on the tick time alive.",
+			section = nylocasSection
+	)
+	default NYLOTIMEALIVE nyloTimeAliveCountStyle()
+	{
+		return NYLOTIMEALIVE.COUNTDOWN;
+	}
+
+	@ConfigItem(
+			position = 6,
+			keyName = "nyloRecolorMenu",
+			name = "Nylocas Recolor Menu Options",
+			description = "Recolors the menu options of each Nylocas to it's respective attack style.",
+			section = nylocasSection
+	)
+	default boolean nyloRecolorMenu()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 7,
+			keyName = "nyloHighlightOverlay",
+			name = "Nylocas Highlight Overlay",
+			description = "Select your role to highlight respective Nylocas to attack.",
+			section = nylocasSection
+	)
+	default boolean nyloHighlightOverlay()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 8,
+			keyName = "nyloAliveCounter",
+			name = "Nylocas Alive Counter Panel",
+			description = "Displays how many Nylocas are currently alive.",
+			section = nylocasSection
+	)
+	default boolean nyloAlivePanel()
+	{
+		return false;
+	}
 
 	@ConfigItem(
 			position = 0,
@@ -438,226 +438,226 @@ public interface TheatreConfig extends Config
 		return true;
 	}
 
-//	@ConfigItem(
-//			position = 10,
-//			keyName = "nyloAggressiveOverlayStyle",
-//			name = "Highlight Aggressive Nylocas Style",
-//			description = "Highlight style for aggressive Nylocas after they spawn.",
-//			section = nylocasSection
-//	)
-//	default AGGRESSIVENYLORENDERSTYLE nyloAggressiveOverlayStyle()
-//	{
-//		return AGGRESSIVENYLORENDERSTYLE.TILE;
-//	}
-//
-//
-//	@ConfigItem(
-//			position = 11,
-//			keyName = "removeNyloEntries",
-//			name = "Remove Attack Options",
-//			description = "Removes the attack options for Nylocas immune to your current attack style.",
-//			section = nylocasSection
-//	)
-//	default boolean removeNyloEntries()
-//	{
-//		return true;
-//	}
-//
-//	@ConfigItem(
-//			position = 12,
-//			keyName = "nylocasWavesHelper",
-//			name = "Nylocas Waves Helper",
-//			description = "Overlay's squares with wave numbers on nylo entry bridges for upcoming nylos",
-//			section = nylocasSection
-//	)
-//	default boolean nyloWavesHelper()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 13,
-//			keyName = "nylocasTicksUntilWave",
-//			name = "Nylocas Ticks Until Wave",
-//			description = "Prints how many ticks until the next wave could spawn",
-//			section = nylocasSection
-//	)
-//	default boolean nyloTicksUntilWaves()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 14,
-//			keyName = "nyloInstanceTimer",
-//			name = "Nylocas Instance Timer",
-//			description = "Displays an instance timer when the next set will potentially spawn - ENTER ON ZERO.",
-//			section = nylocasSection
-//	)
-//	default boolean nyloInstanceTimer()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 15,
-//			keyName = "nyloStallMessage",
-//			name = "Nylocas Stall Wave Messages",
-//			description = "Sends a chat message when you have stalled the next wave of Nylocas to spawn due to being capped.",
-//			section = nylocasSection
-//	)
-//	default boolean nyloStallMessage()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 16,
-//			keyName = "nylocasBigSplitsHelper",
-//			name = "Nylocas Big Splits",
-//			description = "Tells you when bigs will spawn little nylos",
-//			section = nylocasSection
-//	)
-//	default boolean bigSplits()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 17,
-//			keyName = "nylocasBigSplitsHighlightColor",
-//			name = "Highlight Color",
-//			description = "Color of the NPC highlight",
-//			section = nylocasSection,
-//			hidden = true
-////			unhide = "nylocasBigSplitsHelper"
-//	)
-//	@Alpha
-//	default Color getBigSplitsHighlightColor()
-//	{
-//		return Color.YELLOW;
-//	}
-//
-//	@ConfigItem(
-//			position = 18,
-//			keyName = "nylocasBigSplitsTileColor2",
-//			name = "Highlight Color Tick 2",
-//			description = "Color of the NPC highlight on tick 1",
-//			section = nylocasSection,
-//			hidden = true
-////			unhide = "nylocasBigSplitsHelper"
-//	)
-//	@Alpha
-//	default Color getBigSplitsTileColor2()
-//	{
-//		return Color.ORANGE;
-//	}
-//
-//	@ConfigItem(
-//			position = 19,
-//			keyName = "nylocasBigSplitsTileColor1",
-//			name = "Highlight Color Tick 1",
-//			description = "Color of the NPC highlight on tick 0",
-//			section = nylocasSection,
-//			hidden = true
-////			unhide = "nylocasBigSplitsHelper"
-//	)
-//	@Alpha
-//	default Color getBigSplitsTileColor1()
-//	{
-//		return Color.RED;
-//	}
-//
-//	@ConfigItem(
-//			position = 20,
-//			keyName = "nylocasBigSplitsTextColor2",
-//			name = "Text Color Tick 2",
-//			description = "Color of the baby tick counter on tick 2",
-//			section = nylocasSection,
-//			hidden = true
-////			unhide = "nylocasBigSplitsHelper"
-//	)
-//	@Alpha
-//	default Color getBigSplitsTextColor2()
-//	{
-//		return Color.ORANGE;
-//	}
+	@ConfigItem(
+			position = 10,
+			keyName = "nyloAggressiveOverlayStyle",
+			name = "Highlight Aggressive Nylocas Style",
+			description = "Highlight style for aggressive Nylocas after they spawn.",
+			section = nylocasSection
+	)
+	default AGGRESSIVENYLORENDERSTYLE nyloAggressiveOverlayStyle()
+	{
+		return AGGRESSIVENYLORENDERSTYLE.TILE;
+	}
 
-//	@ConfigItem(
-//			position = 21,
-//			keyName = "nylocasBigSplitsTextColor1",
-//			name = "Text Color Tick 1",
-//			description = "Color of the baby tick counter on tick 1",
-//			section = nylocasSection,
-//			hidden = true
-////			unhide = "nylocasBigSplitsHelper"
-//	)
-//	@Alpha
-//	default Color getBigSplitsTextColor1()
-//	{
-//		return Color.RED;
-//	}
-//
-//	@ConfigItem(
-//			position = 22,
-//			keyName = "nyloBossAttackTickCount",
-//			name = "Nylocas Boss Attack Tick Counter",
-//			description = "Displays the ticks left until the Nylocas Boss will attack next (LEFT-MOST).",
-//			section = nylocasSection
-//	)
-//	default boolean nyloBossAttackTickCount()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			position = 23,
-//			keyName = "nyloBossSwitchTickCount",
-//			name = "Nylocas Boss Switch Tick Counter",
-//			description = "Displays the ticks left until the Nylocas Boss will switch next (MIDDLE).",
-//			section = nylocasSection
-//	)
-//	default boolean nyloBossSwitchTickCount()
-//	{
-//		return true;
-//	}
-//
-//	@ConfigItem(
-//			position = 24,
-//			keyName = "nyloBossTotalTickCount",
-//			name = "Nylocas Boss Total Tick Counter",
-//			description = "Displays the total ticks since the Nylocas Boss has spawned (RIGHT-MOST).",
-//			section = nylocasSection
-//	)
-//	default boolean nyloBossTotalTickCount()
-//	{
-//		return false;
-//	}
 
-	//Sotetseg Section
-//	@ConfigItem(
-//			position = 0,
-//			keyName = "sotetsegMaze",
-//			name = "Sotetseg Maze",
-//			description = "Memorizes Solo Mazes and displays tiles of other chosen players.",
-//			section = sotetsegSection
-//	)
-//	default boolean sotetsegMaze()
-//	{
-//		return true;
-//	}
-//
-//	@ConfigItem(
-//			position = 1,
-//			keyName = "sotetsegOrbAttacksTicks",
-//			name = "Sotetseg Small Attack Orb Ticks",
-//			description = "Displays the amount of ticks until it will hit you (change prayers when you see 1).",
-//			section = sotetsegSection
-//	)
-//	default boolean sotetsegOrbAttacksTicks()
-//	{
-//		return true;
-//	}
+	@ConfigItem(
+			position = 11,
+			keyName = "removeNyloEntries",
+			name = "Remove Attack Options",
+			description = "Removes the attack options for Nylocas immune to your current attack style.",
+			section = nylocasSection
+	)
+	default boolean removeNyloEntries()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 12,
+			keyName = "nylocasWavesHelper",
+			name = "Nylocas Waves Helper",
+			description = "Overlay's squares with wave numbers on nylo entry bridges for upcoming nylos",
+			section = nylocasSection
+	)
+	default boolean nyloWavesHelper()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 13,
+			keyName = "nylocasTicksUntilWave",
+			name = "Nylocas Ticks Until Wave",
+			description = "Prints how many ticks until the next wave could spawn",
+			section = nylocasSection
+	)
+	default boolean nyloTicksUntilWaves()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 14,
+			keyName = "nyloInstanceTimer",
+			name = "Nylocas Instance Timer",
+			description = "Displays an instance timer when the next set will potentially spawn - ENTER ON ZERO.",
+			section = nylocasSection
+	)
+	default boolean nyloInstanceTimer()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 15,
+			keyName = "nyloStallMessage",
+			name = "Nylocas Stall Wave Messages",
+			description = "Sends a chat message when you have stalled the next wave of Nylocas to spawn due to being capped.",
+			section = nylocasSection
+	)
+	default boolean nyloStallMessage()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 16,
+			keyName = "nylocasBigSplitsHelper",
+			name = "Nylocas Big Splits",
+			description = "Tells you when bigs will spawn little nylos",
+			section = nylocasSection
+	)
+	default boolean bigSplits()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 17,
+			keyName = "nylocasBigSplitsHighlightColor",
+			name = "Highlight Color",
+			description = "Color of the NPC highlight",
+			section = nylocasSection,
+			hidden = true
+//			unhide = "nylocasBigSplitsHelper"
+	)
+	@Alpha
+	default Color getBigSplitsHighlightColor()
+	{
+		return Color.YELLOW;
+	}
+
+	@ConfigItem(
+			position = 18,
+			keyName = "nylocasBigSplitsTileColor2",
+			name = "Highlight Color Tick 2",
+			description = "Color of the NPC highlight on tick 1",
+			section = nylocasSection,
+			hidden = true
+//			unhide = "nylocasBigSplitsHelper"
+	)
+	@Alpha
+	default Color getBigSplitsTileColor2()
+	{
+		return Color.ORANGE;
+	}
+
+	@ConfigItem(
+			position = 19,
+			keyName = "nylocasBigSplitsTileColor1",
+			name = "Highlight Color Tick 1",
+			description = "Color of the NPC highlight on tick 0",
+			section = nylocasSection,
+			hidden = true
+//			unhide = "nylocasBigSplitsHelper"
+	)
+	@Alpha
+	default Color getBigSplitsTileColor1()
+	{
+		return Color.RED;
+	}
+
+	@ConfigItem(
+			position = 20,
+			keyName = "nylocasBigSplitsTextColor2",
+			name = "Text Color Tick 2",
+			description = "Color of the baby tick counter on tick 2",
+			section = nylocasSection,
+			hidden = true
+//			unhide = "nylocasBigSplitsHelper"
+	)
+	@Alpha
+	default Color getBigSplitsTextColor2()
+	{
+		return Color.ORANGE;
+	}
+
+	@ConfigItem(
+			position = 21,
+			keyName = "nylocasBigSplitsTextColor1",
+			name = "Text Color Tick 1",
+			description = "Color of the baby tick counter on tick 1",
+			section = nylocasSection,
+			hidden = true
+//			unhide = "nylocasBigSplitsHelper"
+	)
+	@Alpha
+	default Color getBigSplitsTextColor1()
+	{
+		return Color.RED;
+	}
+
+	@ConfigItem(
+			position = 22,
+			keyName = "nyloBossAttackTickCount",
+			name = "Nylocas Boss Attack Tick Counter",
+			description = "Displays the ticks left until the Nylocas Boss will attack next (LEFT-MOST).",
+			section = nylocasSection
+	)
+	default boolean nyloBossAttackTickCount()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			position = 23,
+			keyName = "nyloBossSwitchTickCount",
+			name = "Nylocas Boss Switch Tick Counter",
+			description = "Displays the ticks left until the Nylocas Boss will switch next (MIDDLE).",
+			section = nylocasSection
+	)
+	default boolean nyloBossSwitchTickCount()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 24,
+			keyName = "nyloBossTotalTickCount",
+			name = "Nylocas Boss Total Tick Counter",
+			description = "Displays the total ticks since the Nylocas Boss has spawned (RIGHT-MOST).",
+			section = nylocasSection
+	)
+	default boolean nyloBossTotalTickCount()
+	{
+		return false;
+	}
+
+	// Sotetseg Section
+	@ConfigItem(
+			position = 0,
+			keyName = "sotetsegMaze",
+			name = "Sotetseg Maze",
+			description = "Memorizes Solo Mazes and displays tiles of other chosen players.",
+			section = sotetsegSection
+	)
+	default boolean sotetsegMaze()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 1,
+			keyName = "sotetsegOrbAttacksTicks",
+			name = "Sotetseg Small Attack Orb Ticks",
+			description = "Displays the amount of ticks until it will hit you (change prayers when you see 1).",
+			section = sotetsegSection
+	)
+	default boolean sotetsegOrbAttacksTicks()
+	{
+		return true;
+	}
 
 	@ConfigItem(
 			position = 0,
@@ -795,44 +795,44 @@ public interface TheatreConfig extends Config
 //		return Color.RED;
 //	}
 
-	//Verzik Section
-//	@ConfigItem(
-//			position = 0,
-//			keyName = "verzikTileOverlay",
-//			name = "Verzik Tile Indicator",
-//			description = "Highlights Verzik's tile - If you are next to or inside of the indicator, you can be meleed.",
-//			section = verzikSection
-//	)
-//	default boolean verzikTileOverlay()
-//	{
-//		return true;
-//	}
-//
-//	@ConfigItem(
-//			position = 1,
-//			keyName = "verzikProjectiles",
-//			name = "Verzik Range Tile Markers",
-//			description = "Highlights the tiles of Verzik's range projectiles.",
-//			section = verzikSection
-//	)
-//	default boolean verzikProjectiles()
-//	{
-//		return true;
-//	}
-//
-//	@Alpha
-//	@ConfigItem(
-//			position = 2,
-//			keyName = "verzikProjectilesColor",
-//			name = "Verzik Range Tile Markers Color",
-//			description = "Select a color for the Verzik's Range Projectile Tile Overlay to be.",
-//			section = verzikSection
-//	)
-//	default Color verzikProjectilesColor()
-//	{
-//		return new Color(255, 0, 0, 50);
-//	}
-//
+//	Verzik Section
+	@ConfigItem(
+			position = 0,
+			keyName = "verzikTileOverlay",
+			name = "Verzik Tile Indicator",
+			description = "Highlights Verzik's tile - If you are next to or inside of the indicator, you can be meleed.",
+			section = verzikSection
+	)
+	default boolean verzikTileOverlay()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 1,
+			keyName = "verzikProjectiles",
+			name = "Verzik Range Tile Markers",
+			description = "Highlights the tiles of Verzik's range projectiles.",
+			section = verzikSection
+	)
+	default boolean verzikProjectiles()
+	{
+		return true;
+	}
+
+	@Alpha
+	@ConfigItem(
+			position = 2,
+			keyName = "verzikProjectilesColor",
+			name = "Verzik Range Tile Markers Color",
+			description = "Select a color for the Verzik's Range Projectile Tile Overlay to be.",
+			section = verzikSection
+	)
+	default Color verzikProjectilesColor()
+	{
+		return new Color(255, 0, 0, 50);
+	}
+
 	@ConfigItem(
 			position = 0,
 			keyName = "VerzikRedHP",
@@ -857,29 +857,29 @@ public interface TheatreConfig extends Config
 		return true;
 	}
 
-//	@ConfigItem(
-//			position = 6,
-//			keyName = "verzikAttackCounter",
-//			name = "Verzik Attack Counter",
-//			description = "Displays Verzik's Attack Count (useful for when P2 reds as they despawn after the 7th attack).",
-//			section = verzikSection
-//	)
-//	default boolean verzikAttackCounter()
-//	{
-//		return true;
-//	}
-//
-//	@ConfigItem(
-//			position = 7,
-//			keyName = "verzikTotalTickCounter",
-//			name = "Verzik Total Tick Counter",
-//			description = "Displays the total amount of ticks Verzik has been alive for.",
-//			section = verzikSection
-//	)
-//	default boolean verzikTotalTickCounter()
-//	{
-//		return true;
-//	}
+	@ConfigItem(
+			position = 6,
+			keyName = "verzikAttackCounter",
+			name = "Verzik Attack Counter",
+			description = "Displays Verzik's Attack Count (useful for when P2 reds as they despawn after the 7th attack).",
+			section = verzikSection
+	)
+	default boolean verzikAttackCounter()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 7,
+			keyName = "verzikTotalTickCounter",
+			name = "Verzik Total Tick Counter",
+			description = "Displays the total amount of ticks Verzik has been alive for.",
+			section = verzikSection
+	)
+	default boolean verzikTotalTickCounter()
+	{
+		return true;
+	}
 //
 //	@ConfigItem(
 //			position = 8,
@@ -904,7 +904,7 @@ public interface TheatreConfig extends Config
 //	{
 //		return true;
 //	}
-
+//
 //	@ConfigItem(
 //			position = 10,
 //			keyName = "lightningAttackHelper",
@@ -1075,63 +1075,63 @@ public interface TheatreConfig extends Config
 //		return Color.RED;
 //	}
 
-	//Miscellaneous Configuration Items
-//	@ConfigItem(
-//			keyName = "highlightMelee",
-//			name = "",
-//			description = "",
-//			hidden = true
-//	)
-//	default boolean getHighlightMeleeNylo()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			keyName = "highlightMelee",
-//			name = "",
-//			description = "",
-//			hidden = true
-//	)
-//	void setHighlightMeleeNylo(boolean set);
-//
-//	@ConfigItem(
-//			keyName = "highlightMage",
-//			name = "",
-//			description = "",
-//			hidden = true
-//	)
-//	default boolean getHighlightMageNylo()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			keyName = "highlightMage",
-//			name = "",
-//			description = "",
-//			hidden = true
-//	)
-//	void setHighlightMageNylo(boolean set);
-//
-//	@ConfigItem(
-//			keyName = "highlightRange",
-//			name = "",
-//			description = "",
-//			hidden = true
-//	)
-//	default boolean getHighlightRangeNylo()
-//	{
-//		return false;
-//	}
-//
-//	@ConfigItem(
-//			keyName = "highlightRange",
-//			name = "",
-//			description = "",
-//			hidden = true
-//	)
-//	void setHighlightRangeNylo(boolean set);
+	// Miscellaneous Configuration Items
+	@ConfigItem(
+			keyName = "highlightMelee",
+			name = "",
+			description = "",
+			hidden = true
+	)
+	default boolean getHighlightMeleeNylo()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			keyName = "highlightMelee",
+			name = "",
+			description = "",
+			hidden = true
+	)
+	void setHighlightMeleeNylo(boolean set);
+
+	@ConfigItem(
+			keyName = "highlightMage",
+			name = "",
+			description = "",
+			hidden = true
+	)
+	default boolean getHighlightMageNylo()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			keyName = "highlightMage",
+			name = "",
+			description = "",
+			hidden = true
+	)
+	void setHighlightMageNylo(boolean set);
+
+	@ConfigItem(
+			keyName = "highlightRange",
+			name = "",
+			description = "",
+			hidden = true
+	)
+	default boolean getHighlightRangeNylo()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			keyName = "highlightRange",
+			name = "",
+			description = "",
+			hidden = true
+	)
+	void setHighlightRangeNylo(boolean set);
 
 	@Getter(AccessLevel.PACKAGE)
 	@AllArgsConstructor
